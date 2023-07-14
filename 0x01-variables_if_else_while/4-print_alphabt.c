@@ -1,23 +1,17 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description 'print alphabets except q and e'
- * Return: Always 0
+ * main -main function
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	int n = 97;
+	char i;
 
-	while (n <= 122)
-	{
-		if (n == 101 || n == 133)
-		{
-			n++;
-			continue;
-		}
-		putchar(n);
-		n++;
-	}
+	for (i = 'a' ; i <= 'z' ; i++)
+		if (i != 'q' && i != 'e')
+			putchar(i);
 	putchar('\n');
 	return (0);
 }
